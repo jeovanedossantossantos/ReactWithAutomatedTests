@@ -5,7 +5,8 @@ import { Counter } from './components/Counter';
 function App() {
   return (
     <>
-      <Counter/>
+      {/* <Counter/> */}
+      <h1>Hello World</h1>
     </>
   );
 }
