@@ -1,0 +1,1 @@
+# Studying automated tests for front end with ReactJs
