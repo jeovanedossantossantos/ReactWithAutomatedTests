@@ -22,35 +22,14 @@ Configurações iniciais:
 
 
 
-            transform: {
-                "^.+\\.(t|j)sx?$":[
-                "@swc/jest",
-                {
-                    jsc:{
-                    parser:{
-                        syntax:"typescript",
-                        tsx:true,
-                        decorate:true,
-                    },
-                    keepClassName:true,
-                    transform: {
-                        legacyDecorator:true,
-                        decoratorMetadata:true,
-                        react:{
-                        runtime:"automatic"
-                        },
-                        
-                    },
-                    },
-                    module:{
-                    type:"es6",
-                    noInterop:false,
-                    }
-                },
-                ],
-            },
+             transform: {
+                '.+\\.tsx$':"ts-jest"
+            }
 
 
     Instalando bibliotecas do testing-library
 
             yarn add @testing-library/react @testing-library/jest-dom @testing-library/user-event -D
+
+            
+  },

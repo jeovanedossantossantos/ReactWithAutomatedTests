@@ -10,6 +10,7 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "jest-environment-jsdom": "^28.1.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
@@ -19,7 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
+    "test": "jest --watchAll",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -41,9 +42,11 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.17.12",
     "@swc/core": "^1.2.186",
     "@swc/jest": "^0.2.21",
     "jest": "^28.1.0",
+    "ts-jest": "^28.0.2",
     "ts-node": "^10.7.0"
   }
 }
