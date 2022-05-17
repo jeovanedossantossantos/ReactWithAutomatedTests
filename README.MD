@@ -6,4 +6,5 @@
 <li>[x] <a href="https://www.youtube.com/watch?v=pbwXsjVEMqg">React: Teste seus componentes | Jest | Testing Library</a></li>
 <li>[ ] <a href="https://pt-br.reactjs.org/docs/testing.html">React: Docs Testing Overview</a></li>
 <li>[ ] <a href="https://testing-library.com/">React: Module Testing Library</a></li>
+<li>[ ] <a href="https://jestjs.io/docs/next/getting-started">React: Module jest</a></li>
 </ul>
