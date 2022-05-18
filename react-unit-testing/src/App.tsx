@@ -2,9 +2,17 @@ import { useState } from "react";
 
 function App() {
   const [list, setList] = useState(['Jeovane','andersonr','Maluco'])
-  
-  const addToList=()=>{
-    setList(state=>[...state, 'Novo']);
+  const [newItem,setNewItem] = useState('')
+
+  function addToList(){
+    setTimeout(() =>{
+      setList(state=>[...state, newItem]);
+    },500)
+  }
+  function removeFromList(item:string){
+    setTimeout(() =>{
+      setList(state=> state.filter(item=> item !=item));
+    },500)
   }
 
   return (
@@ -13,9 +21,12 @@ function App() {
       <>
       
       <h1 className="teste" >Hello World</h1>
-      <button onClick={()=>addToList()}>Adicionar</button>
+      <input placeholder="Novo item" value={newItem} onChange={e=>setNewItem(e.target.value)}/>
+      <button onClick={addToList}>Adicionar</button>
       <ul>
-        {list.map(item=> {return <li key={item}>{item}</li>})}
+        {list.map(item=>  <li key={item}>{item}
+          <button onClick={e=>removeFromList(item)}>Remover</button>
+        </li>)}
       </ul>
       </>
     
